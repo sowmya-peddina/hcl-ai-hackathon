@@ -6,7 +6,7 @@ class ClusterService:
     It maintains a set of node identifiers and provides simple operations:
     - add_node(node): adds a node (no-op if already present), returns True if added
     - remove_node(node): removes a node, returns True if removed
-    - get_nodes(): returns a list of nodes
+    - get_nodes(): returns a list of nodes in insertion order
     - size(): returns number of nodes
 
     The implementation uses an internal set to keep nodes unique while preserving
