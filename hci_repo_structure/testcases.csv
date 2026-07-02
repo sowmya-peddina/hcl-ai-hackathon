@@ -1,0 +1,87 @@
+Category,Test File,Test Function,File Path,Description
+Backup,test_backup.py,test_backup,hci_repo_structure/tests/backup/test_backup.py,Basic backup test
+Cluster,test_cluster.py,test_cluster_add_remove_get_size,hci_repo_structure/tests/cluster/test_cluster.py,Test cluster node add/remove/get operations
+Cluster,test_cluster.py,test_cluster_init_with_nodes_and_ordering,hci_repo_structure/tests/cluster/test_cluster.py,Test cluster initialization with nodes and duplicate handling
+Compute,test_compute.py,test_compute,hci_repo_structure/tests/compute/test_compute.py,Basic compute test
+Compute,test_compute_service.py,test_init_default_max_vms,hci_repo_structure/tests/compute/test_compute_service.py,Test ComputeService default initialization
+Compute,test_compute_service.py,test_init_custom_max_vms,hci_repo_structure/tests/compute/test_compute_service.py,Test ComputeService custom max_vms initialization
+Compute,test_compute_service.py,test_register_host_success,hci_repo_structure/tests/compute/test_compute_service.py,Test successful host registration
+Compute,test_compute_service.py,test_register_host_empty_host_id,hci_repo_structure/tests/compute/test_compute_service.py,Test host registration with empty host_id validation
+Compute,test_compute_service.py,test_register_host_invalid_cpu_cores,hci_repo_structure/tests/compute/test_compute_service.py,Test host registration with invalid CPU cores validation
+Compute,test_compute_service.py,test_register_host_invalid_memory,hci_repo_structure/tests/compute/test_compute_service.py,Test host registration with invalid memory validation
+Compute,test_compute_service.py,test_register_multiple_hosts,hci_repo_structure/tests/compute/test_compute_service.py,Test registering multiple hosts
+Compute,test_compute_service.py,test_create_vm_success,hci_repo_structure/tests/compute/test_compute_service.py,Test successful VM creation
+Compute,test_compute_service.py,test_create_vm_empty_vm_id,hci_repo_structure/tests/compute/test_compute_service.py,Test VM creation with empty vm_id validation
+Compute,test_compute_service.py,test_create_vm_invalid_cpu_cores,hci_repo_structure/tests/compute/test_compute_service.py,Test VM creation with invalid CPU cores validation
+Compute,test_compute_service.py,test_create_vm_invalid_memory,hci_repo_structure/tests/compute/test_compute_service.py,Test VM creation with invalid memory validation
+Compute,test_compute_service.py,test_create_vm_max_limit,hci_repo_structure/tests/compute/test_compute_service.py,Test VM creation exceeding max limit
+Compute,test_compute_service.py,test_create_multiple_vms,hci_repo_structure/tests/compute/test_compute_service.py,Test creating multiple VMs
+Compute,test_compute_service.py,test_power_off_vm_success,hci_repo_structure/tests/compute/test_compute_service.py,Test successful VM power off
+Compute,test_compute_service.py,test_power_off_vm_not_found,hci_repo_structure/tests/compute/test_compute_service.py,Test powering off non-existent VM
+Compute,test_compute_service.py,test_delete_vm_success,hci_repo_structure/tests/compute/test_compute_service.py,Test successful VM deletion
+Compute,test_compute_service.py,test_delete_vm_not_found,hci_repo_structure/tests/compute/test_compute_service.py,Test deleting non-existent VM
+Compute,test_compute_service.py,test_get_vm_info_success,hci_repo_structure/tests/compute/test_compute_service.py,Test successful VM info retrieval
+Compute,test_compute_service.py,test_get_vm_info_not_found,hci_repo_structure/tests/compute/test_compute_service.py,Test getting info for non-existent VM
+Compute,test_compute_service.py,test_get_vm_info_returns_copy,hci_repo_structure/tests/compute/test_compute_service.py,Test that get_vm_info returns a copy not reference
+Compute,test_compute_service.py,test_list_vms_all,hci_repo_structure/tests/compute/test_compute_service.py,Test listing all VMs
+Compute,test_compute_service.py,test_list_vms_by_host,hci_repo_structure/tests/compute/test_compute_service.py,Test listing VMs filtered by host
+Compute,test_compute_service.py,test_list_vms_by_status,hci_repo_structure/tests/compute/test_compute_service.py,Test listing VMs filtered by status
+Compute,test_compute_service.py,test_list_vms_by_host_and_status,hci_repo_structure/tests/compute/test_compute_service.py,Test listing VMs filtered by both host and status
+Compute,test_compute_service.py,test_list_vms_empty,hci_repo_structure/tests/compute/test_compute_service.py,Test listing VMs when none exist
+Compute,test_compute_service.py,test_get_total_resources,hci_repo_structure/tests/compute/test_compute_service.py,Test getting total resources
+Compute,test_compute_service.py,test_get_total_resources_returns_copy,hci_repo_structure/tests/compute/test_compute_service.py,Test that get_total_resources returns a copy
+Hypervisor,test_hypervisor.py,test_hypervisor,hci_repo_structure/tests/hypervisor/test_hypervisor.py,Basic hypervisor test
+Lifecycle,test_lifecycle.py,test_lifecycle,hci_repo_structure/tests/lifecycle/test_lifecycle.py,Basic lifecycle test
+Management,test_management.py,test_management,hci_repo_structure/tests/management/test_management.py,Basic management test
+Network,test_network.py,test_network,hci_repo_structure/tests/network/test_network.py,Basic network test
+Network,test_network_service.py,test_init,hci_repo_structure/tests/network/test_network_service.py,Test NetworkService initialization
+Network,test_network_service.py,test_create_network_success,hci_repo_structure/tests/network/test_network_service.py,Test successful network creation
+Network,test_network_service.py,test_create_network_with_vlan,hci_repo_structure/tests/network/test_network_service.py,Test network creation with VLAN ID
+Network,test_network_service.py,test_create_network_empty_network_id,hci_repo_structure/tests/network/test_network_service.py,Test network creation with empty network_id validation
+Network,test_network_service.py,test_create_network_empty_cidr,hci_repo_structure/tests/network/test_network_service.py,Test network creation with empty CIDR validation
+Network,test_network_service.py,test_create_network_invalid_cidr_format,hci_repo_structure/tests/network/test_network_service.py,Test network creation with invalid CIDR format validation
+Network,test_network_service.py,test_create_multiple_networks,hci_repo_structure/tests/network/test_network_service.py,Test creating multiple networks
+Network,test_network_service.py,test_delete_network_success,hci_repo_structure/tests/network/test_network_service.py,Test successful network deletion
+Network,test_network_service.py,test_delete_network_not_found,hci_repo_structure/tests/network/test_network_service.py,Test deleting non-existent network
+Network,test_network_service.py,test_add_interface_success,hci_repo_structure/tests/network/test_network_service.py,Test successful interface addition
+Network,test_network_service.py,test_add_interface_empty_interface_id,hci_repo_structure/tests/network/test_network_service.py,Test interface addition with empty interface_id validation
+Network,test_network_service.py,test_add_interface_empty_ip_address,hci_repo_structure/tests/network/test_network_service.py,Test interface addition with empty IP address validation
+Network,test_network_service.py,test_add_interface_network_not_found,hci_repo_structure/tests/network/test_network_service.py,Test interface addition to non-existent network
+Network,test_network_service.py,test_add_multiple_interfaces_to_network,hci_repo_structure/tests/network/test_network_service.py,Test adding multiple interfaces to a network
+Network,test_network_service.py,test_remove_interface_success,hci_repo_structure/tests/network/test_network_service.py,Test successful interface removal
+Network,test_network_service.py,test_remove_interface_not_found,hci_repo_structure/tests/network/test_network_service.py,Test removing non-existent interface
+Network,test_network_service.py,test_remove_interface_updates_network,hci_repo_structure/tests/network/test_network_service.py,Test that interface removal updates network interfaces list
+Network,test_network_service.py,test_get_network_info_success,hci_repo_structure/tests/network/test_network_service.py,Test successful network info retrieval
+Network,test_network_service.py,test_get_network_info_not_found,hci_repo_structure/tests/network/test_network_service.py,Test getting info for non-existent network
+Network,test_network_service.py,test_get_network_info_returns_copy,hci_repo_structure/tests/network/test_network_service.py,Test that get_network_info returns a copy
+Network,test_network_service.py,test_list_networks_all,hci_repo_structure/tests/network/test_network_service.py,Test listing all networks
+Network,test_network_service.py,test_list_networks_by_status,hci_repo_structure/tests/network/test_network_service.py,Test listing networks filtered by status
+Network,test_network_service.py,test_list_networks_empty,hci_repo_structure/tests/network/test_network_service.py,Test listing networks when none exist
+Network,test_network_service.py,test_get_interface_info_success,hci_repo_structure/tests/network/test_network_service.py,Test successful interface info retrieval
+Network,test_network_service.py,test_get_interface_info_not_found,hci_repo_structure/tests/network/test_network_service.py,Test getting info for non-existent interface
+Network,test_network_service.py,test_get_interface_info_returns_copy,hci_repo_structure/tests/network/test_network_service.py,Test that get_interface_info returns a copy
+Performance,test_performance.py,test_performance,hci_repo_structure/tests/performance/test_performance.py,Basic performance test
+Security,test_security.py,test_security,hci_repo_structure/tests/security/test_security.py,Basic security test
+Storage,test_storage.py,test_storage,hci_repo_structure/tests/storage/test_storage.py,Basic storage test
+Storage,test_storage_service.py,test_init_default_max_pool_size,hci_repo_structure/tests/storage/test_storage_service.py,Test default max_pool_size initialization
+Storage,test_storage_service.py,test_init_custom_max_pool_size,hci_repo_structure/tests/storage/test_storage_service.py,Test custom max_pool_size initialization
+Storage,test_storage_service.py,test_create_pool_success,hci_repo_structure/tests/storage/test_storage_service.py,Test successful pool creation
+Storage,test_storage_service.py,test_create_pool_empty_pool_id,hci_repo_structure/tests/storage/test_storage_service.py,Test pool creation with empty pool_id validation
+Storage,test_storage_service.py,test_create_pool_whitespace_pool_id,hci_repo_structure/tests/storage/test_storage_service.py,Test pool creation with whitespace pool_id validation
+Storage,test_storage_service.py,test_create_pool_invalid_size,hci_repo_structure/tests/storage/test_storage_service.py,Test pool creation with invalid size validation
+Storage,test_storage_service.py,test_create_pool_max_limit,hci_repo_structure/tests/storage/test_storage_service.py,Test pool creation exceeding max limit
+Storage,test_storage_service.py,test_create_multiple_pools,hci_repo_structure/tests/storage/test_storage_service.py,Test creating multiple pools
+Storage,test_storage_service.py,test_delete_pool_success,hci_repo_structure/tests/storage/test_storage_service.py,Test successful pool deletion
+Storage,test_storage_service.py,test_delete_pool_not_found,hci_repo_structure/tests/storage/test_storage_service.py,Test deleting non-existent pool
+Storage,test_storage_service.py,test_create_volume_success,hci_repo_structure/tests/storage/test_storage_service.py,Test successful volume creation
+Storage,test_storage_service.py,test_create_volume_empty_volume_id,hci_repo_structure/tests/storage/test_storage_service.py,Test volume creation with empty volume_id validation
+Storage,test_storage_service.py,test_create_volume_invalid_size,hci_repo_structure/tests/storage/test_storage_service.py,Test volume creation with invalid size validation
+Storage,test_storage_service.py,test_create_volume_pool_not_found,hci_repo_structure/tests/storage/test_storage_service.py,Test volume creation in non-existent pool
+Storage,test_storage_service.py,test_create_volume_insufficient_space,hci_repo_structure/tests/storage/test_storage_service.py,Test volume creation with insufficient pool space
+Storage,test_storage_service.py,test_create_volume_updates_pool_usage,hci_repo_structure/tests/storage/test_storage_service.py,Test that volume creation updates pool usage
+Storage,test_storage_service.py,test_get_pool_stats_success,hci_repo_structure/tests/storage/test_storage_service.py,Test getting pool statistics
+Storage,test_storage_service.py,test_get_pool_stats_not_found,hci_repo_structure/tests/storage/test_storage_service.py,Test getting stats for non-existent pool
+Storage,test_storage_service.py,test_get_pool_stats_full_pool,hci_repo_structure/tests/storage/test_storage_service.py,Test pool stats when completely full
+Storage,test_storage_service.py,test_list_volumes_all,hci_repo_structure/tests/storage/test_storage_service.py,Test listing all volumes
+Storage,test_storage_service.py,test_list_volumes_by_pool,hci_repo_structure/tests/storage/test_storage_service.py,Test listing volumes filtered by pool
+Storage,test_storage_service.py,test_list_volumes_empty,hci_repo_structure/tests/storage/test_storage_service.py,Test listing volumes when none exist
