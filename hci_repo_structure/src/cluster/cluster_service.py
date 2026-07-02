@@ -1,4 +1,4 @@
-# cluster service - Edited to provide simple cluster behavior
+# cluster service - Editing it for new PR
 
 class ClusterService:
     """A minimal cluster service used by tests.
