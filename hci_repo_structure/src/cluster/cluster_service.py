@@ -6,7 +6,7 @@ class ClusterService:
     It maintains a set of node identifiers and provides simple operations:
     - add_node(node): adds a node (no-op if already present), returns True if added
     - remove_node(node): removes a node, returns True if removed
-    - get_nodes(): returns a list of nodes in insertion order
+    - get_nodes(): returns a tuple of nodes in insertion order
     - size(): returns number of nodes
 
     The implementation uses an internal set to keep nodes unique while preserving
@@ -43,8 +43,8 @@ class ClusterService:
         return True
 
     def get_nodes(self):
-        """Return the list of nodes in insertion order."""
-        return list(self._nodes_order)
+        """Return the tuple of nodes in insertion order."""
+        return tuple(self._nodes_order)
 
     def size(self):
         """Return the number of nodes in the cluster."""
